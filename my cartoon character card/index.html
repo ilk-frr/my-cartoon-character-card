@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cartoon Character Card - Aaloo</title>
+    <style>
+        /* Universal Selector */
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Element Selectors */
+        body {
+            background-color: #fbe9e7;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            color: #6d4c41;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: #4e342e;
+            line-height: 1.5;
+            margin: 0.4rem 0;
+        }
+
+        /* ID Selector */
+        #character-card {
+            background-color: #ffffff;
+            width: 340px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+            overflow: hidden;
+            border: 3px solid #d7ccc8;
+        }
+
+        /* Class Selectors */
+        .card-image-container {
+            width: 100%;
+            height: 240px;
+            background-color: #efebe9;
+        }
+
+        .card-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            background-color: #ffffff;
+        }
+
+        .stats-box {
+            background-color: #efebe9;
+            padding: 0.85rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            border-left: 4px solid #8d6e63;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="character-card">
+        <div class="card-image-container">
+            <!-- Single potato image -->
+            <img src="https://images.unsplash.com/photo-1508313880080-c4bef0730395?auto=format&fit=crop&w=400&q=80" alt="Single Potato - Aaloo">
+        </div>
+        
+        <div class="card-content">
+            <!-- Inline CSS -->
+            <h1 style="color: #4e342e; font-weight: 800;">Aaloo</h1>
+            
+            <h2>Cartoon Character Profile</h2>
+            
+            <div class="stats-box">
+                <p style="color: #3e2723; font-weight: bold;">Best Ally: Kachalu</p>
+                <p style="color: #3e2723; font-weight: bold;">Enemy: Baingan</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
